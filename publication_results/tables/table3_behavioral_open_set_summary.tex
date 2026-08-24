@@ -1,0 +1,46 @@
+\begin{table}[!htbp]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\caption{Summary of the behavioral-acquisition, paired-remediation,
+missile-enabled open-set, and descriptor-external outcomes. Counts denote
+structured evaluations or diagnostic episodes and are not interpreted as
+independent and identically distributed observations.}
+\label{tab:behavioral-closure}
+\begin{tabular}{@{}
+>{\raggedright\arraybackslash}p{0.23\linewidth}
+>{\raggedright\arraybackslash}p{0.21\linewidth}
+>{\raggedright\arraybackslash}p{0.49\linewidth}
+@{}}
+\toprule
+Analysis block & Outcome & Main evidence \\
+\midrule
+Behavioral acquisition &
+Two motif families met the acquisition criterion; two recurred but did not meet it &
+53 trained policy checkpoints; 5,300 discovery and 5,300 seed-disjoint
+confirmation evaluations; 900 untrained-policy controls; the
+acquisition-status distinction was preserved in 18,000 prospective organized
+evaluation episodes. \\
+\addlinespace
+Paired terrain-recovery remediation &
+Pre-specified no-missile eligibility criterion not met &
+At 100,000 transitions, baseline survival/ground impact was 0.960/0.040 and
+terrain-recovery intervention survival/ground impact was 0.930/0.070. Neither
+pair met the 0.98/0.02 criterion, and the intervention was not advanced. \\
+\addlinespace
+Missile-enabled open-set evaluation &
+Controlled behavioral-regime shift supported &
+78/144 episodes outside the fixed no-missile reference manifold. Group counts
+were 20/36 and 14/36 under the single-missile condition and 21/36 and 23/36
+under the three-missile condition for the baseline and intervention policies,
+respectively; every group showed support in 3/3 independently initialized
+training replicates. \\
+\addlinespace
+Descriptor-external follow-up &
+No multiplicity-controlled association &
+16 stratified permutation tests; four nominal $p<0.05$ signals; global
+Benjamini--Hochberg 0/16, Holm 0/16, and Simes $p=0.1624$. \\
+\bottomrule
+\end{tabular}
+\end{table}
